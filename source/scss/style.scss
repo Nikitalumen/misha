@@ -1,0 +1,32 @@
+@import "mixins";
+@import "fonts";
+@import "normalize";
+@import "null";
+@import "visually-hidden";
+@import "variables";
+@import "scaffolding";
+@import "btn";
+@import "container";
+// @import "outlines";
+
+
+
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/search";
+@import "blocks/cart";
+@import "blocks/free-delivery";
+@import "blocks/catalog";
+@import "blocks/top-week";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/contacts";
+
+@import "blocks/product";
+
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/developer";
+
+@import "outlines";

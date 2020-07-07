@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  width: 260px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #444444;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #444444;
+    color: #fff;
+    transition: 0.3s;
+  }
+  &:active {
+    color: #727272;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 290px;
+  }
+}

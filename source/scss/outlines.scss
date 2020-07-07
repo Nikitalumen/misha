@@ -1,0 +1,23 @@
+body {
+  background:  url("../img/outline/mishka-index-mobile.png") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;
+}
+
+
+@media (min-width: $tablet-width) {
+  body {
+    background:  url("../img/outline/mishka-index-tablet.png") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background:  url("../img/outline/mishka-index-desktop.png") no-repeat 50% 0;
+    background-size: 1200px auto;
+  }
+}
+
+
+

@@ -1,0 +1,272 @@
+.reviews {
+  &__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 7px;
+      bottom: -40px;
+      left: 0;
+      background-image: url("../img/index/zigzag-line-desktop.png");
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    line-height: 31px;
+    color: #444444;
+    margin-bottom: 25px;
+  }
+
+  &__author {
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  &__author-inst {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  &__prev {
+    border: 1px solid #ececec;
+    background-color: transparent;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 127px;
+  }
+
+  &__next {
+    width: 127px;
+    background-color: transparent;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ececec;
+    margin-bottom: 38px;
+  }
+
+  &__btn {
+    width: 256px;
+    font-size: 18px;
+  }
+}
+
+.slider {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 120px;
+      margin-bottom: 100px;
+
+      &::after {
+        width: 768px;
+        height: 17px;
+        bottom: -95px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 457px;
+        bottom: -16px;
+        left: -0;
+        background-image: url("../img/index/review-bg-tablet.jpg");
+        z-index: -1;
+      }
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__list {
+      order: 2;
+      width: 668px;
+      margin-top: 26px;
+      padding-right: 25px;
+      font-size: 17px;
+    }
+
+    &__item {
+    }
+
+    &__text {
+      margin-top: 22px;
+      margin-bottom: 53px;
+    }
+
+    &__author {
+      letter-spacing: 0.7px;
+    }
+
+    &__author-inst {
+    }
+
+    &__prev {
+      margin-left: auto;
+      order: 2;
+      width: 86px;
+      border: none;
+      margin-top: -110px;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        svg {
+          opacity: 0.6;
+        }
+      }
+      &:active {
+        transition: 0.3s;
+        svg {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    &__next {
+      margin-top: -110px;
+      width: 86px;
+      order: 2;
+      margin-bottom: 0;
+      border: none;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        svg {
+          opacity: 0.6;
+        }
+      }
+      &:active {
+        transition: 0.3s;
+        svg {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    &__btn {
+      order: 1;
+      margin-left: auto;
+      width: 170px;
+    }
+  }
+
+  .slider {
+    &__list {
+    }
+
+    &__item {
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .reviews {
+    &__wrapper {
+      padding-left: 260px;
+      padding-right: 90px;
+      &::after {
+        width: 1027px;
+        height: 23px;
+        bottom: -135px;
+        left: 95px;
+      }
+      &::before {
+        bottom: -61px;
+        left: 96px;
+      }
+    }
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+      letter-spacing: -1.2px;
+    }
+
+    &__list {
+      width: 780px;
+      margin-top: 20px;
+      width: 745px;
+      margin-left: 2px;
+    }
+
+    &__item {
+    }
+
+    &__text {
+      letter-spacing: -0.3px;
+      margin-bottom: 31px;
+    }
+
+    &__author {
+      letter-spacing: -0.2px;
+    }
+
+    &__author-inst {
+    }
+
+    &__prev {
+    }
+
+    &__next {
+      margin-right: 5px;
+    }
+
+    &__btn {
+      width: 165px;
+      margin-right: 5px;
+      margin-top: 10px;
+      align-self: center;
+    }
+  }
+
+  .slider {
+    &__list {
+    }
+
+    &__item {
+    }
+  }
+}

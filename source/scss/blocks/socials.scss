@@ -1,0 +1,49 @@
+.socials {
+  margin-bottom: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: -30px;
+    left: 30px;
+  }
+  &__link {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  &__img {
+  }
+}
+@media (min-width:$tablet-width){
+   .socials {
+    width: 224px;
+    &::after {
+      background-color: transparent;
+    }
+    &__link {
+    }
+
+    &__img {
+         transition: 0.3s;
+      &:hover {
+        fill: #46c1ae;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+@media (min-width:$desktop-width){
+    .socials {
+    &__link {
+    }
+
+    &__img {
+    }
+  }
+}

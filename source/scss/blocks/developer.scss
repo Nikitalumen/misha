@@ -1,0 +1,43 @@
+.developer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    margin-right: 15px;
+  }
+
+  &__link {
+    font-size: 19px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .developer {
+    width: 222px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+    &:hover {
+     
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &__title {
+    }
+
+    &__link {
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .developer {
+    &__title {
+    }
+
+    &__link {
+    }
+  }
+}

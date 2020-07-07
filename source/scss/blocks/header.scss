@@ -1,0 +1,56 @@
+.header {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mob-width-only) {
+  .header__wrapper--open .logo__btn--open {
+    display: none;
+  }
+  .header__wrapper--open .logo__btn--close {
+    display: block;
+  }
+
+  .header__wrapper--close .logo__btn--close {
+    display: none;
+  }
+  .header__wrapper--close .nav {
+    display: none;
+  }
+  .header__wrapper--close .search {
+    display: none;
+  }
+  .header__wrapper--close .cart {
+    display: none;
+  }
+  .header__wrapper--nojs .logo__btn {
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .header {
+    position: relative;
+    z-index: 1;
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 15px;
+
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .header {
+    &__wrapper {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
